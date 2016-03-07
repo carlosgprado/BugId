@@ -7,9 +7,9 @@ IF ERRORLEVEL 1 (
 )
 IF NOT "%GFlags:~0,0%" == "" (
   IF "%PROCESSOR_ARCHITECTURE%" == "AMD64" (
-    SET GFlags=C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\gflags.exe
+    SET GFlags=C:\Program Files\Windows Kits\8.1\Debuggers\x64\gflags.exe
   ) ELSE (
-    SET GFlags=C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\gflags.exe
+    SET GFlags=C:\Program Files\Windows Kits\8.1\Debuggers\x86\gflags.exe
   )
 )
 SET GFlags=%GFlags:"=%
